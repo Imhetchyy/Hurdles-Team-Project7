@@ -3,10 +3,10 @@
 === main === 
 Hi, Can you help me?
     * Yes
-    How do i say 'I am hungry' in english?
-    Paano ko sasabihing nagugutom ako sa ingles?
+    How do i say 'Nagugutom Ako' in English?
+    (Paano ko sasabihing nagugutom ako sa Ingles?)
         * * I am hungry
-        * * I dont know 
+        * * I don't know 
         * * I am thirsty
         
     - - Oh Okay

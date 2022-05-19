@@ -1,8 +1,8 @@
-How do i ask for an address in english?
-Paano ako hihingi ng address sa ingles?
+How do I ask for a Tirahan in English?
+(Paano ako hihingi ng tirahan sa Ingles?)
 * What's your address?
 This is correct! Thank you
-* Whats your name?
+* What's your name?
 This is Incorrect!
-* I don't name
-Oh Okay
+* How old are you?
+This is Incorrect!

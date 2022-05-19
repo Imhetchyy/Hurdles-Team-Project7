@@ -1,7 +1,8 @@
-Hello, How do i say Please in english?
+Hello, How do i say Pakiusap in English?
+(Paano ko sasabihin ang pakiusap sa Ingles?)
 * Please 
     Oh Okay, Thanks
-* S'il vous
+* Por favor
     This is Incorrect!
 * Tack
     This is not right!

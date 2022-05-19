@@ -3,8 +3,8 @@
 === main === 
 Hi, Would you mind if ask you something?
     * Yes
-    How do i say thank you in english?
-    Paano ko sasabihin ang salamat sa ingles?
+    How do i say Salamat in English?
+    (Paano ko sasabihin ang salamat sa ingles?)
         * * Thank you
         * * Gracias
         

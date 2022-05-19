@@ -1,15 +1,8 @@
--> main
-
-=== main ===
-Do you know the word for school?
+Do you know the word for Paaralan?
 (Alam mo ba ang salita para sa paaralan?)
-        + [School]
-            -> chosen("School")
-        + [Skool]
-            -> chosen("Skool")
-        + [Shop]
-            -> chosen("Shop")
-
-=== chosen(Language1) ===
-You chose {Language1}!
-->END
+* School
+That is correct!
+* Skool
+That is Incorrect!
+* Shop
+That is Incorrect!
