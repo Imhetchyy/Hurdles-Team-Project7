@@ -38,11 +38,13 @@ public class DialogueManager : MonoBehaviour
         return instance;
     }
 
+
     private void Start()
     {
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
 
+        //Gets the text to display for the choices
         choicesText = new TextMeshProUGUI[choices.Length];
         int index = 0;
         foreach (GameObject choice in choices)
@@ -52,6 +54,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    //Checks whether the user has selected an answer
     private void Update()
     {
         if (!dialogueIsPlaying)
@@ -65,6 +68,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    //Displays the Dialogue panel with the right JSON ink file
     public void EnterDialogueMode(TextAsset inkJSON)
     {
         currentStory = new Story(inkJSON.text);
@@ -74,6 +78,7 @@ public class DialogueManager : MonoBehaviour
         ContinueStory();
     }
 
+    //Closes the Dialogue Panel
     private IEnumerator ExitDialogueMode()
     {
         yield return new WaitForSeconds(0.2f);
@@ -83,6 +88,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
     }
 
+    //Continues the dialogue if no text is left to display, dialogue panel gets terminated
     private void ContinueStory()
     {
         if (currentStory.canContinue)
@@ -107,6 +113,7 @@ public class DialogueManager : MonoBehaviour
 
         int index = 0;
 
+        //Only displays the choices available to be displayed, if there are 2 choices only 2 choices will be available to select
         foreach(Choice choice in currentChoices)
         {
             choices[index].gameObject.SetActive(true);
@@ -129,6 +136,7 @@ public class DialogueManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
     }
 
+    //Informs the story that a choice has been made
     public void MakeChoice(int choiceIndex)
     {
         currentStory.ChooseChoiceIndex(choiceIndex);

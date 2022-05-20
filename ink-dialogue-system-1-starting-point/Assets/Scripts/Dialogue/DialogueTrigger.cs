@@ -18,6 +18,7 @@ public class DialogueTrigger : MonoBehaviour
         visualCue.SetActive(false);
     }
 
+    // Once the player is detected, Displays the visual cue icon and triggers the appropiate JSON dialogue file
     private void Update()
     {
         if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
@@ -34,6 +35,7 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
+    //Uses Player tag to detect the player 
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "Player")
